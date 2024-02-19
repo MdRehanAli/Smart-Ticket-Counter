@@ -28,7 +28,7 @@
 
 <body class="fonts-raleway">
     <!-- Header Section Start  -->
-    <header class="mx-32 fonts-raleway">
+    <header class="lg:mx-32 fonts-raleway">
         <!-- Navigation bar Section  -->
         <nav class="my-10">
             <div class="navbar bg-base-100">
@@ -90,10 +90,10 @@
     <!-- Main Section Start  -->
     <main>
         <!-- Best Offer or Coupon Section  -->
-        <section class="mx-32">
+        <section class="lg:mx-32">
             <h1 class="text-5xl text-center my-12 font-bold">Best offers for you</h1>
-            <div class="flex justify-between gap-10">
-                <div class="flex justify-between items-center w-1/2 bg-orange-400 px-10 border rounded-3xl">
+            <div class="flex justify-between gap-10 flex-col lg:flex-row">
+                <div class="flex justify-between items-center lg:w-1/2 bg-orange-400 px-2 lg:px-10 border rounded-3xl">
                     <div>
                         <h1 class="text-5xl font-extrabold my-3 fonts-inter">15% OFF</h1>
                         <h5 class="text-lg font-bold">on your next purchase</h5>
@@ -107,7 +107,7 @@
                         <p class="text-xl text-gray-300">Coupon Code</p>
                     </div>
                 </div>
-                <div class="flex justify-between items-center w-1/2 bg-red-400 px-10 border rounded-3xl">
+                <div class="flex justify-between items-center lg:w-1/2 bg-red-400 px-2 lg:px-10 border rounded-3xl">
                     <div>
                         <h1 class="text-5xl font-extrabold my-3 fonts-inter">20% OFF</h1>
                         <h5 class="text-lg font-bold">on your next purchase</h5>
@@ -129,7 +129,7 @@
         </section>
 
         <!-- Ticket Booking Section  -->
-        <section class="fonts-inter bg-[#F7F8F8] rounded-t-3xl px-32 pb-28">
+        <section class="fonts-inter bg-[#F7F8F8] rounded-t-3xl lg:px-32 pb-28">
             <div class="pb-10 pt-28">
                 <h1 class="text-5xl text-center font-bold">Baker Vai Paribahan</h1>
                 <p class="text-lg fonts-inter text-center mt-6 mb-12">Yes, you can run unit tests and view the
@@ -137,10 +137,10 @@
                     features allow for a streamlined .</p>
             </div>
             <div class="">
-                <div class="flex justify-between items-center bg-white mb-7 rounded-3xl pr-8">
-                    <div class="p-8  w-3/4">
-                        <div class="flex justify-between items-center pb-6 z">
-                            <div class="flex gap-4">
+                <div class="flex flex-col lg:flex-row justify-between items-center bg-white mb-7 rounded-3xl lg:pr-8">
+                    <div class="lg:p-8 lg:w-3/4">
+                        <div class="flex flex-col lg:flex-row justify-between items-center pb-6">
+                            <div class="flex gap-4 items-center">
                                 <div>
                                     <img src="images/bus-logo.png" alt="Bus Logo">
                                 </div>
@@ -149,7 +149,7 @@
                                     <p class="text-lg text-gray-400">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <div class=" ">
+                            <div class="">
                                 <a class="btn btn-outline btn-success bg-green-100"><img src="images/seat-green.png"
                                         alt="Seat Icon">40 Seats left</a>
                             </div>
@@ -164,8 +164,7 @@
                                 <p>9:00 PM</p>
                             </div>
                             <div>
-                                <div class="flex justify-between items-center pt-4">
-
+                                <div class="flex flex-col lg:flex-row justify-between items-center pt-4 gap-4">
                                     <button class="btn">Boarding Point - Laxmipur</button>
                                     <button class="btn">Dropping Point - Bogura</button>
                                     <button class="btn">Est. Time - 11 Hour</button>
@@ -173,10 +172,10 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="hidden lg:inline">
                         <img src="images/info-devider.png" alt="Info">
                     </div>
-                    <div class="p-8 flex items-center flex-col gap-4">
+                    <div class="lg:p-8 flex items-center flex-col gap-4">
                         <div class="pb-4">
                             <img src="images/fare.png" alt="Ticket Fare Icon">
                         </div>
@@ -185,7 +184,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex justify-between bg-white p-8 rounded-3xl gap-8">
+            <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start bg-white lg:p-8 rounded-3xl gap-8">
                 <div class="w-3/5">
                     <h1 class="text-2xl font-medium py-4">Select Your Seat</h1>
                     <div class="flex justify-between border-dashed border-y-2 py-3">
@@ -199,7 +198,7 @@
                         </div>
                     </div>
                     <div class="flex justify-end py-6">
-                        <img class=" px-11 py-3 bg-gray-300 rounded-lg" src="images/steering.png" alt="Steering Icon">
+                        <img class="lg:px-11 py-3 bg-gray-300 rounded-lg" src="images/steering.png" alt="Steering Icon">
                     </div>
                     <div class="grid gap-x-8 grid-cols-9 text-center text-xl">
                         <div class="grid gap-y-6">
@@ -268,7 +267,7 @@
                     <div>
                         <h1 class="text-2xl font-medium py-4 border-dashed border-b-2 mb-6">Select Your Seat</h1>
                     </div>
-                    <div class="bg-[#F7F8F8] px-8 py-6 rounded-xl">
+                    <div class="bg-[#F7F8F8] px-2 lg:px-8 py-6 rounded-xl">
                         <div class="flex justify-between items-center">
                             <p>Seat</p>
                             <p>Class</p>
@@ -340,8 +339,8 @@
 
     <!-- Footer Section Start  -->
     <footer class="fonts-inter bg-black text-white">
-        <section class="px-32 py-32">
-            <div class="flex justify-between items-center border-dashed border-b-2 border-b-gray-400 pb-12">
+        <section class="px-2 lg:px-32 py-32">
+            <div class="flex flex-col lg:flex-row justify-between items-center border-dashed border-b-2 border-b-gray-400 pb-12">
                 <div>
                     <h1 class="fonts-raleway text-3xl font-bold pb-6">BV Ticket</h1>
                     <p class=" text-gray-400">BV Ticket is a digital platform to make your <br> daily commuting better.</p>
@@ -352,9 +351,9 @@
                 </div>
             </div>
 
-            <div class="flex justify-between items-center pt-12">
-                <p class=" text-gray-400">@all rights reserved, BV Ticket services limited.2024</p>
-                <ul class="flex justify-between items-center w-1/2">
+            <div class="flex flex-col lg:flex-row justify-between items-center pt-12">
+                <p class=" text-gray-400">@all rights reserved, BV Ticket services limited 2024</p>
+                <ul class="flex flex-col lg:flex-row justify-between items-center w-1/2">
                     <li><a href="#">Terms & condition</a></li>
                     <li><a href="#">Return & refund policy</a></li>
                     <li><a href="#">Privacy policy</a></li>
