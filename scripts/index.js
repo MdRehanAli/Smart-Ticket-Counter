@@ -76,11 +76,23 @@ function selectSeat(id) {
 
     // Display Next Option
     // entered Phone number
-    const phoneNumber = document.getElementById('phoneNumber')
-    const phoneNo = phoneNumber.value
-    console.log(phoneNo)
     
-    if (phoneNo !== '') {
-        NextButton.classList.remove('hidden')
-    }
+    NextButton.classList.remove('hidden')
+
+    NextButton.addEventListener('click', function(){
+        const main = document.getElementById('main')
+        main.classList.add('hidden')
+        const header = document.getElementById('header')
+        header.classList.add('hidden')
+        const footer = document.getElementById('footer')
+        footer.classList.add('hidden')
+
+        const modals = document.getElementById('modal')
+        modals.classList.remove('hidden')
+
+        
+    })
+
+    
+    
 }
