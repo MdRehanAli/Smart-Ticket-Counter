@@ -49,37 +49,56 @@ function selectSeat(id) {
     // append Total Price
     totalPrice.innerText = total_price
 
-
-    // Coupon Draw
-    const coupons = document.getElementById('coupon')
-    const couponEnter = coupons.value
-
-    const coupon1 = "NEW15"
-    const coupon2 = "Couple 20"
-    if ((couponEnter === coupon1)) {
-
-    }
     // else[
     //     alert("Please enter correct coupon code")
     // ]
 
 
     // get Grand total price 
-    const grandPrice = document.getElementById('grand-total')
-    const grandTotal = grandPrice.innerText
+
+
+
+
+
+    // Coupon Draw
+    document.getElementById('coupleButton').addEventListener('click', function () {
+        let grandPrice = document.getElementById('grand-total')
+        let grandPriceVal = parseInt(grandPrice)
+        const coupons = document.getElementById('coupon')
+        const couponEnter = coupons.value
+        const coupon1 = "NEW15"
+        const coupon2 = "Couple 20"
+        if ((couponEnter === coupon1)) {
+            discount = total_price * (15 / 100)
+            grandPrice = total_price - discount
+
+            console.log(grandPrice)
+            grandPrice.innerText = total_price
+        }
+        else if ((couponEnter === coupon2)) {
+            discount = total_price * (20 / 100)
+            grandPrice = total_price - discount
+
+            console.log(grandPrice)
+            grandPrice.innerText = total_price
+        }
+        else {
+            grandPrice.innerText = total_price
+        }
+
+    })
 
     // append Total Price
-    grandPrice.innerText = total_price
 
     // Get Next Button 
     const NextButton = document.getElementById('Next-button')
 
     // Display Next Option
     // entered Phone number
-    
+
     NextButton.classList.remove('hidden')
 
-    NextButton.addEventListener('click', function(){
+    NextButton.addEventListener('click', function () {
         const main = document.getElementById('main')
         main.classList.add('hidden')
         const header = document.getElementById('header')
@@ -90,9 +109,9 @@ function selectSeat(id) {
         const modals = document.getElementById('modal')
         modals.classList.remove('hidden')
 
-        
+
     })
 
-    
-    
 }
+
+
